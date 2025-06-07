@@ -1,0 +1,88 @@
+body{
+  justify-content: center;
+  background-color: #ebebeb;
+}
+
+.simple-email-input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border: none #ccc;
+  border-radius: 8px;
+  max-width: 600px;
+  font-family: sans-serif;
+  position: relative;
+  background: #fff;
+  padding: 5px;
+  border-radius: 8px;
+  min-height: 50px;
+}
+
+.simple-email-input input {
+  font-size: 1rem;
+  color: #bdbdbd;
+  display: flex;
+  flex: 1 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  width: 400px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #fdfdfd;
+  border: none;
+  border-radius: 8px;
+  box-shadow: grey;
+}
+.simple-email-input input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.tag {
+  background: #e0e0e0;
+  padding: 4px 10px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.tag.invalid {
+  background: #ffcdd2;
+  color: #b71c1c;
+}
+
+.tag button {
+  background: none;
+  border: none;
+  margin-left: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 180px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  z-index: 10;
+  overflow-y: auto;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  background-color: #f0f0f0;
+}
